@@ -53,6 +53,6 @@ class InteractionsController < ApplicationController
 
   # Only allow a trusted parameter "white list" through.
   def interaction_params
-    params.require(:interaction).permit(:integer, :string)
+    params.require(:interaction).permit(:location)
   end
 end
