@@ -20,6 +20,8 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+# DATABASE_URL="postgres://myuser:mypass@localhost:5432/somedatabase"
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] || 'postgres://localhost:5432/rdlytics' %>
