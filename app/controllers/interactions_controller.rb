@@ -20,7 +20,7 @@ class InteractionsController < ApplicationController
     @interaction = Interaction.new(interaction_params)
 
     if @user.interactions << @interaction
-      render json: @interaction, status: :created, location: user_interactions_path(@user,@interaction)
+      render json: @interaction, status: :created, location: user_interaction_url(@user,@interaction)
     else
       render json: @interaction.errors, status: :unprocessable_entity
     end
