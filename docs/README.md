@@ -17,8 +17,6 @@ Dado o desafio acima citado, decidi separar o projeto em 4 projetos menores que 
 
 A lista acima é segue a ordem em que cada item foi desenvolvido. E são descritos nos item a seguir.
 
-## API REST
-
 ## RD-Lytics API
 
 Servindo como base de toda a stack, a API REST foi desenvolvida em cima do fantástico Ruby on Rails, utilizando-se da vantagem de poder servir apenas como API eliminando muito da stack padrão do Rails que seria inútil ou ainda subutilizada.
