@@ -52,6 +52,45 @@ For testing you can just run in your terminal
 $ rake # ...or: rails test
 ```
 
+## API Endpoints
+
+```bash
+# users: list, create, show and format
+GET  /users                            
+POST /users                            
+GET  /users/:id              
+{
+	id: '',
+	created_at: '',
+	updated_at: ''
+}
+
+# interactions: list, create, show and format
+GET  /users/:user_id/interactions      
+POST /users/:user_id/interactions      
+GET  /users/:user_id/interactions/:id      
+{
+	id: '',
+	user_id: '',
+	location: '',
+	created_at: '',
+	updated_at: ''
+}
+
+# contacts: list, create, show and format
+GET  /users/:user_id/contacts          
+POST /users/:user_id/contacts          
+GET  /users/:user_id/contacts/:id        
+{
+	id: '',
+	user_id: '',
+	email: '',
+	created_at: '',
+	updated_at: ''
+}          
+```
+
+
 ## Licence
 
 This is a simple demo and MUST NOT be utilized by any other circumstances instead of code evaluation.
